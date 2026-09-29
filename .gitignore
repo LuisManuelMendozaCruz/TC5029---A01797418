@@ -18,3 +18,9 @@ __pycache__/
 # Configuración de IDE
 .vscode/
 .idea/
+
+# Carpetas reservadas para la Entrega 2
+retail-apisec-pos/to-be/
+to-be/
+retail-apisec-pos/postman/
+postman/
