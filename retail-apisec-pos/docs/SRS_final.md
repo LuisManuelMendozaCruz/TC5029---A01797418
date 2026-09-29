@@ -1,4 +1,4 @@
-﻿# Especificación de Requerimientos de Software (SRS)
+﻿# Especificación de Requerimientos de Software (SRS) para el Punto de Venta POS (Proyecto de Ciberseguridad Empresarial) (SRS)
 ## Sistema de Punto de Venta Retail 7-Eleven con Arquitectura Zero Trust
 **Estándar de Referencia:** IEEE Std 830-1998 (Estructura Simplificada)  
 **Versión:** 1.0.0-Final  
