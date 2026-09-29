@@ -15,6 +15,6 @@ __pycache__/
 .env
 .env.*
 
-# Configuracion de IDE
+# Configuración de IDE
 .vscode/
 .idea/

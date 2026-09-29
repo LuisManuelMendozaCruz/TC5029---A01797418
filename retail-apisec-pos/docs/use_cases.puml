@@ -12,14 +12,14 @@ rectangle "Sistema Punto de Venta Seguro 7-Eleven (POS)" {
     usecase "RF-01: Autenticarse en Terminal (JWT)" as UC_Login
     usecase "RF-03: Escanear y Registrar Productos" as UC_Scan
     usecase "RF-07: Procesar Cobro con Tarjeta" as UC_PayCard
-    usecase "RF-06: Procesar Recarga Telefonica" as UC_Recharge
+    usecase "RF-06: Procesar Recarga Telefónica" as UC_Recharge
     usecase "RF-04: Emitir Ticket de Compra" as UC_Ticket
-    usecase "RF-12: Validar Carrito No Vacio" as UC_ValidateCart
-    usecase "RF-08: Autorizar Reembolso / Cancelacion" as UC_Refund
+    usecase "RF-12: Validar Carrito No Vacío" as UC_ValidateCart
+    usecase "RF-08: Autorizar Reembolso / Cancelación" as UC_Refund
     usecase "RF-09: Ejecutar Arqueo y Corte de Caja" as UC_CashAudit
     usecase "RF-02: Registrar Nuevo Operador" as UC_CreateUser
     usecase "RF-05: Modificar Logotipo Institucional" as UC_Logo
-    usecase "RF-10: Monitorear Telemetria (API Sec Inspector)" as UC_Telemetry
+    usecase "RF-10: Monitorear Telemetría (API Sec Inspector)" as UC_Telemetry
     usecase "RNF-01: Validar Contrato DTO (Anti-Mass Assignment)" as UC_DTO
     usecase "RNF-03: Validar Tenant Store_ID (Anti-BOLA)" as UC_Tenant
 }
@@ -27,7 +27,12 @@ rectangle "Sistema Punto de Venta Seguro 7-Eleven (POS)" {
 Cashier <|-- Supervisor
 Supervisor <|-- Admin
 
+' Todos los roles se autentican en la terminal mediante JWT (RF-01)
 Cashier --> UC_Login
+Supervisor --> UC_Login
+Admin --> UC_Login
+
+' Flujo operativo de caja
 Cashier --> UC_Scan
 Cashier --> UC_PayCard
 Cashier --> UC_Recharge
@@ -36,10 +41,12 @@ UC_PayCard ..> UC_ValidateCart : <<include>>
 UC_PayCard ..> UC_Ticket : <<include>>
 UC_PayCard ..> UC_DTO : <<include>>
 
+' Flujo de supervisión
 Supervisor --> UC_Refund
 Supervisor --> UC_CashAudit
 UC_Refund ..> UC_Tenant : <<include>>
 
+' Flujo de administración y seguridad
 Admin --> UC_CreateUser
 Admin --> UC_Logo
 Admin --> UC_Telemetry

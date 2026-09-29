@@ -6,7 +6,7 @@
     "layer": "4.5"
   },
   "domain": "enterprise-attack",
-  "description": "Mapeo de TTPs evaluados y mitigados en la solucion Retail POS (As-Is vs To-Be)",
+  "description": "Mapeo de TTPs evaluados y mitigados en la solución Retail POS (As-Is vs To-Be)",
   "filters": {
     "platforms": ["Linux", "Windows", "IaaS"]
   },
@@ -28,49 +28,49 @@
       "techniqueID": "T1190",
       "tactic": "initial-access",
       "score": 9,
-      "comment": "Inyeccion SQL en endpoint de catalogo",
+      "comment": "Inyección SQL en endpoint de catálogo",
       "enabled": true
     },
     {
       "techniqueID": "T1078.004",
       "tactic": "privilege-escalation",
       "score": 9,
-      "comment": "BOLA: Suplantacion de identificadores de tienda",
+      "comment": "BOLA: Suplantación de identificadores de tienda",
       "enabled": true
     },
     {
       "techniqueID": "T1565.001",
       "tactic": "defense-evasion",
       "score": 9,
-      "comment": "Mass Assignment: Manipulacion de atributos de descuento a nivel de objeto",
+      "comment": "Mass Assignment: Manipulación de atributos de descuento a nivel de objeto",
       "enabled": true
     },
     {
       "techniqueID": "T1068",
       "tactic": "privilege-escalation",
       "score": 8,
-      "comment": "BFLA: Ejecucion de cancelaciones y reembolsos sin rol de supervisor",
+      "comment": "BFLA: Ejecución de cancelaciones y reembolsos sin rol de supervisor",
       "enabled": true
     },
     {
       "techniqueID": "T1005",
       "tactic": "collection",
       "score": 9,
-      "comment": "Extraccion de datos bancarios (PAN/CVV) en APIs de cobro",
+      "comment": "Extracción de datos bancarios (PAN/CVV) en APIs de cobro",
       "enabled": true
     },
     {
       "techniqueID": "T1592",
       "tactic": "reconnaissance",
       "score": 7,
-      "comment": "Recoleccion de directorios telefonicos de clientes mediante recargas",
+      "comment": "Recolección de directorios telefónicos de clientes mediante recargas",
       "enabled": true
     },
     {
       "techniqueID": "T1499.002",
       "tactic": "impact",
       "score": 8,
-      "comment": "Denegacion de servicio por saturacion de recursos en consultas no acotadas",
+      "comment": "Denegación de servicio por saturación de recursos en consultas no acotadas",
       "enabled": true
     }
   ],
