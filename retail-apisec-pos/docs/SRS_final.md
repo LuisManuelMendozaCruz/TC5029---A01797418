@@ -1,4 +1,4 @@
-﻿# Especificación de Requerimientos de Software (SRS) para el Punto de Venta POS (Proyecto de Ciberseguridad Empresarial) (SRS)
+﻿# Especificación de Requerimientos para el Punto de Venta (POS) - Proyecto de Ciberseguridad Empresarial
 ## Sistema de Punto de Venta Retail 7-Eleven con Arquitectura Zero Trust
 **Estándar de Referencia:** IEEE Std 830-1998 (Estructura Simplificada)  
 **Versión:** 1.0.0-Final  
@@ -12,7 +12,7 @@
 ## 1. Introducción
 
 ### 1.1 Propósito del documento
-El propósito de esta Especificación de Requerimientos de Software (SRS) es formalizar los requerimientos funcionales, no funcionales y de dominio del sistema de Punto de Venta (POS) para 7-Eleven. El proyecto articula una demostración técnica dual:
+El propósito de esta Especificación de Requerimientos es formalizar los requerimientos funcionales, no funcionales y de dominio del sistema de Punto de Venta (POS) para la cadena de tiendas 7-Eleven. El proyecto de ciberseguridad empresarial demostrará a través de Pruebas de Concepto la  detección de vulnerabilidades:
 1. **Entorno As-Is (Vulnerable / Flask):** Expone debilidades críticas comunes en arquitecturas transaccionales heredadas (Inyección SQL, BOLA, Mass Assignment, BFLA, almacenamiento de tarjetas sin cifrar y Denegación de Servicio).
 2. **Entorno To-Be (Seguro / FastAPI):** Implementa un modelo de ciberseguridad *Zero Trust* con autenticación criptográfica JWT, control de acceso basado en roles con scopes mínimos (RBAC), contratos DTO estrictos con listas blancas (*whitelisting*), observabilidad forense y cumplimiento normativo (PCI-DSS y NIST SP 800-63B).
 
