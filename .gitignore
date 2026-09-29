@@ -19,8 +19,11 @@ __pycache__/
 .vscode/
 .idea/
 
-# Carpetas reservadas para la Entrega 2
+# Carpetas reservadas para entregas futuras y respaldos locales
 retail-apisec-pos/to-be/
 to-be/
 retail-apisec-pos/postman/
 postman/
+retail-apisec-pos_20260926_old_v1/
+*_old*/
+*.bak
